@@ -1,1 +1,6 @@
 This repository contains research artefacts for the paper "Validation of Modern JSON Schema: Formalization and Complexity", under double-blind review.
+
+Folder schemas:
+- alternate.true.dyn: Described as dyn<i>.js in the article.
+- alternate.true.four: Described as stat<i>.js in the article.
+- altbounded.true.dyn: Described as dyn.bounded<i>.js in the article.
