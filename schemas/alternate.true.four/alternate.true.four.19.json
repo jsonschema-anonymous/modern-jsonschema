@@ -1,0 +1,796 @@
+{
+    "$ref": "#/definitions/urn:start/definitions/quant.x1",
+    "definitions": {
+        "urn:start": {
+             "definitions": {
+                 "quant.x1" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar1/definitions/afterq1" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq1" }
+                    ]
+                 },
+                 "quant.x2" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar2/definitions/afterq2" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq2" }
+                    ]
+                 },
+                 "quant.x3" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar3/definitions/afterq3" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq3" }
+                    ]
+                 },
+                 "quant.x4" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar4/definitions/afterq4" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq4" }
+                    ]
+                 },
+                 "quant.x5" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar5/definitions/afterq5" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq5" }
+                    ]
+                 },
+                 "quant.x6" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar6/definitions/afterq6" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq6" }
+                    ]
+                 },
+                 "quant.x7" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar7/definitions/afterq7" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq7" }
+                    ]
+                 },
+                 "quant.x8" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar8/definitions/afterq8" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq8" }
+                    ]
+                 },
+                 "quant.x9" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar9/definitions/afterq9" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq9" }
+                    ]
+                 },
+                 "quant.x10" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar10/definitions/afterq10" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq10" }
+                    ]
+                 },
+                 "quant.x11" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar11/definitions/afterq11" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq11" }
+                    ]
+                 },
+                 "quant.x12" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar12/definitions/afterq12" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq12" }
+                    ]
+                 },
+                 "quant.x13" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar13/definitions/afterq13" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq13" }
+                    ]
+                 },
+                 "quant.x14" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar14/definitions/afterq14" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq14" }
+                    ]
+                 },
+                 "quant.x15" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar15/definitions/afterq15" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq15" }
+                    ]
+                 },
+                 "quant.x16" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar16/definitions/afterq16" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq16" }
+                    ]
+                 },
+                 "quant.x17" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar17/definitions/afterq17" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq17" }
+                    ]
+                 },
+                 "quant.x18" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar18/definitions/afterq18" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq18" }
+                    ]
+                 },
+                 "quant.x19" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar19/definitions/afterq19" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq19" }
+                    ]
+                 },
+                 "quant.x20" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar20/definitions/afterq20" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq20" }
+                    ]
+                 },
+                 "quant.x21" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar21/definitions/afterq21" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq21" }
+                    ]
+                 },
+                 "quant.x22" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar22/definitions/afterq22" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq22" }
+                    ]
+                 },
+                 "quant.x23" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar23/definitions/afterq23" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq23" }
+                    ]
+                 },
+                 "quant.x24" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar24/definitions/afterq24" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq24" }
+                    ]
+                 },
+                 "quant.x25" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar25/definitions/afterq25" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq25" }
+                    ]
+                 },
+                 "quant.x26" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar26/definitions/afterq26" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq26" }
+                    ]
+                 },
+                 "quant.x27" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar27/definitions/afterq27" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq27" }
+                    ]
+                 },
+                 "quant.x28" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar28/definitions/afterq28" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq28" }
+                    ]
+                 },
+                 "quant.x29" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar29/definitions/afterq29" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq29" }
+                    ]
+                 },
+                 "quant.x30" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar30/definitions/afterq30" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq30" }
+                    ]
+                 },
+                 "quant.x31" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar31/definitions/afterq31" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq31" }
+                    ]
+                 },
+                 "quant.x32" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar32/definitions/afterq32" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq32" }
+                    ]
+                 },
+                 "quant.x33" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar33/definitions/afterq33" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq33" }
+                    ]
+                 },
+                 "quant.x34" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar34/definitions/afterq34" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq34" }
+                    ]
+                 },
+                 "quant.x35" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar35/definitions/afterq35" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq35" }
+                    ]
+                 },
+                 "quant.x36" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar36/definitions/afterq36" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq36" }
+                    ]
+                 },
+                 "quant.x37" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar37/definitions/afterq37" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq37" }
+                    ]
+                 },
+                 "quant.x38" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar38/definitions/afterq38" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq38" }
+                    ]
+                 },
+                 "afterq1": { "$ref": "#/definitions/urn:start/definitions/quant.x2" },
+                 "afterq2": { "$ref": "#/definitions/urn:start/definitions/quant.x3" },
+                 "afterq3": { "$ref": "#/definitions/urn:start/definitions/quant.x4" },
+                 "afterq4": { "$ref": "#/definitions/urn:start/definitions/quant.x5" },
+                 "afterq5": { "$ref": "#/definitions/urn:start/definitions/quant.x6" },
+                 "afterq6": { "$ref": "#/definitions/urn:start/definitions/quant.x7" },
+                 "afterq7": { "$ref": "#/definitions/urn:start/definitions/quant.x8" },
+                 "afterq8": { "$ref": "#/definitions/urn:start/definitions/quant.x9" },
+                 "afterq9": { "$ref": "#/definitions/urn:start/definitions/quant.x10" },
+                 "afterq10": { "$ref": "#/definitions/urn:start/definitions/quant.x11" },
+                 "afterq11": { "$ref": "#/definitions/urn:start/definitions/quant.x12" },
+                 "afterq12": { "$ref": "#/definitions/urn:start/definitions/quant.x13" },
+                 "afterq13": { "$ref": "#/definitions/urn:start/definitions/quant.x14" },
+                 "afterq14": { "$ref": "#/definitions/urn:start/definitions/quant.x15" },
+                 "afterq15": { "$ref": "#/definitions/urn:start/definitions/quant.x16" },
+                 "afterq16": { "$ref": "#/definitions/urn:start/definitions/quant.x17" },
+                 "afterq17": { "$ref": "#/definitions/urn:start/definitions/quant.x18" },
+                 "afterq18": { "$ref": "#/definitions/urn:start/definitions/quant.x19" },
+                 "afterq19": { "$ref": "#/definitions/urn:start/definitions/quant.x20" },
+                 "afterq20": { "$ref": "#/definitions/urn:start/definitions/quant.x21" },
+                 "afterq21": { "$ref": "#/definitions/urn:start/definitions/quant.x22" },
+                 "afterq22": { "$ref": "#/definitions/urn:start/definitions/quant.x23" },
+                 "afterq23": { "$ref": "#/definitions/urn:start/definitions/quant.x24" },
+                 "afterq24": { "$ref": "#/definitions/urn:start/definitions/quant.x25" },
+                 "afterq25": { "$ref": "#/definitions/urn:start/definitions/quant.x26" },
+                 "afterq26": { "$ref": "#/definitions/urn:start/definitions/quant.x27" },
+                 "afterq27": { "$ref": "#/definitions/urn:start/definitions/quant.x28" },
+                 "afterq28": { "$ref": "#/definitions/urn:start/definitions/quant.x29" },
+                 "afterq29": { "$ref": "#/definitions/urn:start/definitions/quant.x30" },
+                 "afterq30": { "$ref": "#/definitions/urn:start/definitions/quant.x31" },
+                 "afterq31": { "$ref": "#/definitions/urn:start/definitions/quant.x32" },
+                 "afterq32": { "$ref": "#/definitions/urn:start/definitions/quant.x33" },
+                 "afterq33": { "$ref": "#/definitions/urn:start/definitions/quant.x34" },
+                 "afterq34": { "$ref": "#/definitions/urn:start/definitions/quant.x35" },
+                 "afterq35": { "$ref": "#/definitions/urn:start/definitions/quant.x36" },
+                 "afterq36": { "$ref": "#/definitions/urn:start/definitions/quant.x37" },
+                 "afterq37": { "$ref": "#/definitions/urn:start/definitions/quant.x38" },
+                 "afterq38": { "$ref": "#/definitions/urn:close/definitions/phi" }
+             }
+        },
+        "urn:setvar1": {
+            "definitions": {
+                "x1":     {  },
+                "not.x1": { "not": {} },
+                "afterq1": { "$ref": "#/definitions/urn:start/definitions/quant.x2" }
+            }
+        },
+        "urn:setvar2": {
+            "definitions": {
+                "x2":     {  },
+                "not.x2": { "not": {} },
+                "afterq2": { "$ref": "#/definitions/urn:start/definitions/quant.x3" }
+            }
+        },
+        "urn:setvar3": {
+            "definitions": {
+                "x3":     {  },
+                "not.x3": { "not": {} },
+                "afterq3": { "$ref": "#/definitions/urn:start/definitions/quant.x4" }
+            }
+        },
+        "urn:setvar4": {
+            "definitions": {
+                "x4":     {  },
+                "not.x4": { "not": {} },
+                "afterq4": { "$ref": "#/definitions/urn:start/definitions/quant.x5" }
+            }
+        },
+        "urn:setvar5": {
+            "definitions": {
+                "x5":     {  },
+                "not.x5": { "not": {} },
+                "afterq5": { "$ref": "#/definitions/urn:start/definitions/quant.x6" }
+            }
+        },
+        "urn:setvar6": {
+            "definitions": {
+                "x6":     {  },
+                "not.x6": { "not": {} },
+                "afterq6": { "$ref": "#/definitions/urn:start/definitions/quant.x7" }
+            }
+        },
+        "urn:setvar7": {
+            "definitions": {
+                "x7":     {  },
+                "not.x7": { "not": {} },
+                "afterq7": { "$ref": "#/definitions/urn:start/definitions/quant.x8" }
+            }
+        },
+        "urn:setvar8": {
+            "definitions": {
+                "x8":     {  },
+                "not.x8": { "not": {} },
+                "afterq8": { "$ref": "#/definitions/urn:start/definitions/quant.x9" }
+            }
+        },
+        "urn:setvar9": {
+            "definitions": {
+                "x9":     {  },
+                "not.x9": { "not": {} },
+                "afterq9": { "$ref": "#/definitions/urn:start/definitions/quant.x10" }
+            }
+        },
+        "urn:setvar10": {
+            "definitions": {
+                "x10":     {  },
+                "not.x10": { "not": {} },
+                "afterq10": { "$ref": "#/definitions/urn:start/definitions/quant.x11" }
+            }
+        },
+        "urn:setvar11": {
+            "definitions": {
+                "x11":     {  },
+                "not.x11": { "not": {} },
+                "afterq11": { "$ref": "#/definitions/urn:start/definitions/quant.x12" }
+            }
+        },
+        "urn:setvar12": {
+            "definitions": {
+                "x12":     {  },
+                "not.x12": { "not": {} },
+                "afterq12": { "$ref": "#/definitions/urn:start/definitions/quant.x13" }
+            }
+        },
+        "urn:setvar13": {
+            "definitions": {
+                "x13":     {  },
+                "not.x13": { "not": {} },
+                "afterq13": { "$ref": "#/definitions/urn:start/definitions/quant.x14" }
+            }
+        },
+        "urn:setvar14": {
+            "definitions": {
+                "x14":     {  },
+                "not.x14": { "not": {} },
+                "afterq14": { "$ref": "#/definitions/urn:start/definitions/quant.x15" }
+            }
+        },
+        "urn:setvar15": {
+            "definitions": {
+                "x15":     {  },
+                "not.x15": { "not": {} },
+                "afterq15": { "$ref": "#/definitions/urn:start/definitions/quant.x16" }
+            }
+        },
+        "urn:setvar16": {
+            "definitions": {
+                "x16":     {  },
+                "not.x16": { "not": {} },
+                "afterq16": { "$ref": "#/definitions/urn:start/definitions/quant.x17" }
+            }
+        },
+        "urn:setvar17": {
+            "definitions": {
+                "x17":     {  },
+                "not.x17": { "not": {} },
+                "afterq17": { "$ref": "#/definitions/urn:start/definitions/quant.x18" }
+            }
+        },
+        "urn:setvar18": {
+            "definitions": {
+                "x18":     {  },
+                "not.x18": { "not": {} },
+                "afterq18": { "$ref": "#/definitions/urn:start/definitions/quant.x19" }
+            }
+        },
+        "urn:setvar19": {
+            "definitions": {
+                "x19":     {  },
+                "not.x19": { "not": {} },
+                "afterq19": { "$ref": "#/definitions/urn:start/definitions/quant.x20" }
+            }
+        },
+        "urn:setvar20": {
+            "definitions": {
+                "x20":     {  },
+                "not.x20": { "not": {} },
+                "afterq20": { "$ref": "#/definitions/urn:start/definitions/quant.x21" }
+            }
+        },
+        "urn:setvar21": {
+            "definitions": {
+                "x21":     {  },
+                "not.x21": { "not": {} },
+                "afterq21": { "$ref": "#/definitions/urn:start/definitions/quant.x22" }
+            }
+        },
+        "urn:setvar22": {
+            "definitions": {
+                "x22":     {  },
+                "not.x22": { "not": {} },
+                "afterq22": { "$ref": "#/definitions/urn:start/definitions/quant.x23" }
+            }
+        },
+        "urn:setvar23": {
+            "definitions": {
+                "x23":     {  },
+                "not.x23": { "not": {} },
+                "afterq23": { "$ref": "#/definitions/urn:start/definitions/quant.x24" }
+            }
+        },
+        "urn:setvar24": {
+            "definitions": {
+                "x24":     {  },
+                "not.x24": { "not": {} },
+                "afterq24": { "$ref": "#/definitions/urn:start/definitions/quant.x25" }
+            }
+        },
+        "urn:setvar25": {
+            "definitions": {
+                "x25":     {  },
+                "not.x25": { "not": {} },
+                "afterq25": { "$ref": "#/definitions/urn:start/definitions/quant.x26" }
+            }
+        },
+        "urn:setvar26": {
+            "definitions": {
+                "x26":     {  },
+                "not.x26": { "not": {} },
+                "afterq26": { "$ref": "#/definitions/urn:start/definitions/quant.x27" }
+            }
+        },
+        "urn:setvar27": {
+            "definitions": {
+                "x27":     {  },
+                "not.x27": { "not": {} },
+                "afterq27": { "$ref": "#/definitions/urn:start/definitions/quant.x28" }
+            }
+        },
+        "urn:setvar28": {
+            "definitions": {
+                "x28":     {  },
+                "not.x28": { "not": {} },
+                "afterq28": { "$ref": "#/definitions/urn:start/definitions/quant.x29" }
+            }
+        },
+        "urn:setvar29": {
+            "definitions": {
+                "x29":     {  },
+                "not.x29": { "not": {} },
+                "afterq29": { "$ref": "#/definitions/urn:start/definitions/quant.x30" }
+            }
+        },
+        "urn:setvar30": {
+            "definitions": {
+                "x30":     {  },
+                "not.x30": { "not": {} },
+                "afterq30": { "$ref": "#/definitions/urn:start/definitions/quant.x31" }
+            }
+        },
+        "urn:setvar31": {
+            "definitions": {
+                "x31":     {  },
+                "not.x31": { "not": {} },
+                "afterq31": { "$ref": "#/definitions/urn:start/definitions/quant.x32" }
+            }
+        },
+        "urn:setvar32": {
+            "definitions": {
+                "x32":     {  },
+                "not.x32": { "not": {} },
+                "afterq32": { "$ref": "#/definitions/urn:start/definitions/quant.x33" }
+            }
+        },
+        "urn:setvar33": {
+            "definitions": {
+                "x33":     {  },
+                "not.x33": { "not": {} },
+                "afterq33": { "$ref": "#/definitions/urn:start/definitions/quant.x34" }
+            }
+        },
+        "urn:setvar34": {
+            "definitions": {
+                "x34":     {  },
+                "not.x34": { "not": {} },
+                "afterq34": { "$ref": "#/definitions/urn:start/definitions/quant.x35" }
+            }
+        },
+        "urn:setvar35": {
+            "definitions": {
+                "x35":     {  },
+                "not.x35": { "not": {} },
+                "afterq35": { "$ref": "#/definitions/urn:start/definitions/quant.x36" }
+            }
+        },
+        "urn:setvar36": {
+            "definitions": {
+                "x36":     {  },
+                "not.x36": { "not": {} },
+                "afterq36": { "$ref": "#/definitions/urn:start/definitions/quant.x37" }
+            }
+        },
+        "urn:setvar37": {
+            "definitions": {
+                "x37":     {  },
+                "not.x37": { "not": {} },
+                "afterq37": { "$ref": "#/definitions/urn:start/definitions/quant.x38" }
+            }
+        },
+        "urn:setvar38": {
+            "definitions": {
+                "x38":     {  },
+                "not.x38": { "not": {} },
+                "afterq38": { "$ref": "#/definitions/urn:close/definitions/phi" }
+            }
+        },
+        "urn:close": {
+             "definitions": {
+                "x1":     { "not": {} },
+                "not.x1": {  },
+                "x2":     { "not": {} },
+                "not.x2": {  },
+                "x3":     { "not": {} },
+                "not.x3": {  },
+                "x4":     { "not": {} },
+                "not.x4": {  },
+                "x5":     { "not": {} },
+                "not.x5": {  },
+                "x6":     { "not": {} },
+                "not.x6": {  },
+                "x7":     { "not": {} },
+                "not.x7": {  },
+                "x8":     { "not": {} },
+                "not.x8": {  },
+                "x9":     { "not": {} },
+                "not.x9": {  },
+                "x10":     { "not": {} },
+                "not.x10": {  },
+                "x11":     { "not": {} },
+                "not.x11": {  },
+                "x12":     { "not": {} },
+                "not.x12": {  },
+                "x13":     { "not": {} },
+                "not.x13": {  },
+                "x14":     { "not": {} },
+                "not.x14": {  },
+                "x15":     { "not": {} },
+                "not.x15": {  },
+                "x16":     { "not": {} },
+                "not.x16": {  },
+                "x17":     { "not": {} },
+                "not.x17": {  },
+                "x18":     { "not": {} },
+                "not.x18": {  },
+                "x19":     { "not": {} },
+                "not.x19": {  },
+                "x20":     { "not": {} },
+                "not.x20": {  },
+                "x21":     { "not": {} },
+                "not.x21": {  },
+                "x22":     { "not": {} },
+                "not.x22": {  },
+                "x23":     { "not": {} },
+                "not.x23": {  },
+                "x24":     { "not": {} },
+                "not.x24": {  },
+                "x25":     { "not": {} },
+                "not.x25": {  },
+                "x26":     { "not": {} },
+                "not.x26": {  },
+                "x27":     { "not": {} },
+                "not.x27": {  },
+                "x28":     { "not": {} },
+                "not.x28": {  },
+                "x29":     { "not": {} },
+                "not.x29": {  },
+                "x30":     { "not": {} },
+                "not.x30": {  },
+                "x31":     { "not": {} },
+                "not.x31": {  },
+                "x32":     { "not": {} },
+                "not.x32": {  },
+                "x33":     { "not": {} },
+                "not.x33": {  },
+                "x34":     { "not": {} },
+                "not.x34": {  },
+                "x35":     { "not": {} },
+                "not.x35": {  },
+                "x36":     { "not": {} },
+                "not.x36": {  },
+                "x37":     { "not": {} },
+                "not.x37": {  },
+                "x38":     { "not": {} },
+                "not.x38": {  },
+                "phi": {
+                   "allOf": [
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x1" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x2" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x1" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x2" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x3" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x4" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x3" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x4" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x5" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x6" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x5" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x6" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x7" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x8" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x7" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x8" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x9" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x10" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x9" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x10" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x11" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x12" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x11" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x12" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x13" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x14" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x13" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x14" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x15" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x16" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x15" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x16" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x17" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x18" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x17" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x18" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x19" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x20" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x19" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x20" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x21" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x22" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x21" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x22" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x23" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x24" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x23" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x24" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x25" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x26" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x25" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x26" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x27" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x28" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x27" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x28" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x29" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x30" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x29" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x30" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x31" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x32" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x31" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x32" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x33" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x34" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x33" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x34" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x35" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x36" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x35" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x36" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x37" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x38" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x37" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x38" }
+				      ]
+			   } 
+                         ]
+                       }
+                   ]
+                }
+             }
+        }
+    }
+}

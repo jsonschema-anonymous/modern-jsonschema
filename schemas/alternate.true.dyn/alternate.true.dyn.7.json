@@ -1,0 +1,336 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$ref": "urn:start#quant.x1",
+    "$defs": {
+        "urn:start": {
+             "$id": "urn:start",
+             "$defs": {
+                 "quant.x1" : { 
+                    "$anchor": "quant.x1",
+                    "allOf": [ { "$ref": "urn:setvar1#afterq1" },
+                               { "$ref": "urn:start#afterq1" }
+                    ]
+                 },
+                 "quant.x2" : { 
+                    "$anchor": "quant.x2",
+                    "anyOf": [ { "$ref": "urn:setvar2#afterq2" },
+                               { "$ref": "urn:start#afterq2" }
+                    ]
+                 },
+                 "quant.x3" : { 
+                    "$anchor": "quant.x3",
+                    "allOf": [ { "$ref": "urn:setvar3#afterq3" },
+                               { "$ref": "urn:start#afterq3" }
+                    ]
+                 },
+                 "quant.x4" : { 
+                    "$anchor": "quant.x4",
+                    "anyOf": [ { "$ref": "urn:setvar4#afterq4" },
+                               { "$ref": "urn:start#afterq4" }
+                    ]
+                 },
+                 "quant.x5" : { 
+                    "$anchor": "quant.x5",
+                    "allOf": [ { "$ref": "urn:setvar5#afterq5" },
+                               { "$ref": "urn:start#afterq5" }
+                    ]
+                 },
+                 "quant.x6" : { 
+                    "$anchor": "quant.x6",
+                    "anyOf": [ { "$ref": "urn:setvar6#afterq6" },
+                               { "$ref": "urn:start#afterq6" }
+                    ]
+                 },
+                 "quant.x7" : { 
+                    "$anchor": "quant.x7",
+                    "allOf": [ { "$ref": "urn:setvar7#afterq7" },
+                               { "$ref": "urn:start#afterq7" }
+                    ]
+                 },
+                 "quant.x8" : { 
+                    "$anchor": "quant.x8",
+                    "anyOf": [ { "$ref": "urn:setvar8#afterq8" },
+                               { "$ref": "urn:start#afterq8" }
+                    ]
+                 },
+                 "quant.x9" : { 
+                    "$anchor": "quant.x9",
+                    "allOf": [ { "$ref": "urn:setvar9#afterq9" },
+                               { "$ref": "urn:start#afterq9" }
+                    ]
+                 },
+                 "quant.x10" : { 
+                    "$anchor": "quant.x10",
+                    "anyOf": [ { "$ref": "urn:setvar10#afterq10" },
+                               { "$ref": "urn:start#afterq10" }
+                    ]
+                 },
+                 "quant.x11" : { 
+                    "$anchor": "quant.x11",
+                    "allOf": [ { "$ref": "urn:setvar11#afterq11" },
+                               { "$ref": "urn:start#afterq11" }
+                    ]
+                 },
+                 "quant.x12" : { 
+                    "$anchor": "quant.x12",
+                    "anyOf": [ { "$ref": "urn:setvar12#afterq12" },
+                               { "$ref": "urn:start#afterq12" }
+                    ]
+                 },
+                 "quant.x13" : { 
+                    "$anchor": "quant.x13",
+                    "allOf": [ { "$ref": "urn:setvar13#afterq13" },
+                               { "$ref": "urn:start#afterq13" }
+                    ]
+                 },
+                 "quant.x14" : { 
+                    "$anchor": "quant.x14",
+                    "anyOf": [ { "$ref": "urn:setvar14#afterq14" },
+                               { "$ref": "urn:start#afterq14" }
+                    ]
+                 },
+                 "afterq1": { "$anchor": "afterq1", "$ref": "urn:start#quant.x2" },
+                 "afterq2": { "$anchor": "afterq2", "$ref": "urn:start#quant.x3" },
+                 "afterq3": { "$anchor": "afterq3", "$ref": "urn:start#quant.x4" },
+                 "afterq4": { "$anchor": "afterq4", "$ref": "urn:start#quant.x5" },
+                 "afterq5": { "$anchor": "afterq5", "$ref": "urn:start#quant.x6" },
+                 "afterq6": { "$anchor": "afterq6", "$ref": "urn:start#quant.x7" },
+                 "afterq7": { "$anchor": "afterq7", "$ref": "urn:start#quant.x8" },
+                 "afterq8": { "$anchor": "afterq8", "$ref": "urn:start#quant.x9" },
+                 "afterq9": { "$anchor": "afterq9", "$ref": "urn:start#quant.x10" },
+                 "afterq10": { "$anchor": "afterq10", "$ref": "urn:start#quant.x11" },
+                 "afterq11": { "$anchor": "afterq11", "$ref": "urn:start#quant.x12" },
+                 "afterq12": { "$anchor": "afterq12", "$ref": "urn:start#quant.x13" },
+                 "afterq13": { "$anchor": "afterq13", "$ref": "urn:start#quant.x14" },
+                 "afterq14": { "$anchor": "afterq14", "$ref": "urn:close#phi" }
+             }
+        },
+        "urn:setvar1": {
+            "$id": "urn:setvar1",
+            "$defs": {
+                "x1":     { "$dynamicAnchor": "x1",     "anyOf": [true] },
+                "not.x1": { "$dynamicAnchor": "not.x1", "anyOf": [false] },
+                "afterq1": { "$anchor": "afterq1", "$ref": "urn:start#quant.x2" }
+            }
+        },
+        "urn:setvar2": {
+            "$id": "urn:setvar2",
+            "$defs": {
+                "x2":     { "$dynamicAnchor": "x2",     "anyOf": [true] },
+                "not.x2": { "$dynamicAnchor": "not.x2", "anyOf": [false] },
+                "afterq2": { "$anchor": "afterq2", "$ref": "urn:start#quant.x3" }
+            }
+        },
+        "urn:setvar3": {
+            "$id": "urn:setvar3",
+            "$defs": {
+                "x3":     { "$dynamicAnchor": "x3",     "anyOf": [true] },
+                "not.x3": { "$dynamicAnchor": "not.x3", "anyOf": [false] },
+                "afterq3": { "$anchor": "afterq3", "$ref": "urn:start#quant.x4" }
+            }
+        },
+        "urn:setvar4": {
+            "$id": "urn:setvar4",
+            "$defs": {
+                "x4":     { "$dynamicAnchor": "x4",     "anyOf": [true] },
+                "not.x4": { "$dynamicAnchor": "not.x4", "anyOf": [false] },
+                "afterq4": { "$anchor": "afterq4", "$ref": "urn:start#quant.x5" }
+            }
+        },
+        "urn:setvar5": {
+            "$id": "urn:setvar5",
+            "$defs": {
+                "x5":     { "$dynamicAnchor": "x5",     "anyOf": [true] },
+                "not.x5": { "$dynamicAnchor": "not.x5", "anyOf": [false] },
+                "afterq5": { "$anchor": "afterq5", "$ref": "urn:start#quant.x6" }
+            }
+        },
+        "urn:setvar6": {
+            "$id": "urn:setvar6",
+            "$defs": {
+                "x6":     { "$dynamicAnchor": "x6",     "anyOf": [true] },
+                "not.x6": { "$dynamicAnchor": "not.x6", "anyOf": [false] },
+                "afterq6": { "$anchor": "afterq6", "$ref": "urn:start#quant.x7" }
+            }
+        },
+        "urn:setvar7": {
+            "$id": "urn:setvar7",
+            "$defs": {
+                "x7":     { "$dynamicAnchor": "x7",     "anyOf": [true] },
+                "not.x7": { "$dynamicAnchor": "not.x7", "anyOf": [false] },
+                "afterq7": { "$anchor": "afterq7", "$ref": "urn:start#quant.x8" }
+            }
+        },
+        "urn:setvar8": {
+            "$id": "urn:setvar8",
+            "$defs": {
+                "x8":     { "$dynamicAnchor": "x8",     "anyOf": [true] },
+                "not.x8": { "$dynamicAnchor": "not.x8", "anyOf": [false] },
+                "afterq8": { "$anchor": "afterq8", "$ref": "urn:start#quant.x9" }
+            }
+        },
+        "urn:setvar9": {
+            "$id": "urn:setvar9",
+            "$defs": {
+                "x9":     { "$dynamicAnchor": "x9",     "anyOf": [true] },
+                "not.x9": { "$dynamicAnchor": "not.x9", "anyOf": [false] },
+                "afterq9": { "$anchor": "afterq9", "$ref": "urn:start#quant.x10" }
+            }
+        },
+        "urn:setvar10": {
+            "$id": "urn:setvar10",
+            "$defs": {
+                "x10":     { "$dynamicAnchor": "x10",     "anyOf": [true] },
+                "not.x10": { "$dynamicAnchor": "not.x10", "anyOf": [false] },
+                "afterq10": { "$anchor": "afterq10", "$ref": "urn:start#quant.x11" }
+            }
+        },
+        "urn:setvar11": {
+            "$id": "urn:setvar11",
+            "$defs": {
+                "x11":     { "$dynamicAnchor": "x11",     "anyOf": [true] },
+                "not.x11": { "$dynamicAnchor": "not.x11", "anyOf": [false] },
+                "afterq11": { "$anchor": "afterq11", "$ref": "urn:start#quant.x12" }
+            }
+        },
+        "urn:setvar12": {
+            "$id": "urn:setvar12",
+            "$defs": {
+                "x12":     { "$dynamicAnchor": "x12",     "anyOf": [true] },
+                "not.x12": { "$dynamicAnchor": "not.x12", "anyOf": [false] },
+                "afterq12": { "$anchor": "afterq12", "$ref": "urn:start#quant.x13" }
+            }
+        },
+        "urn:setvar13": {
+            "$id": "urn:setvar13",
+            "$defs": {
+                "x13":     { "$dynamicAnchor": "x13",     "anyOf": [true] },
+                "not.x13": { "$dynamicAnchor": "not.x13", "anyOf": [false] },
+                "afterq13": { "$anchor": "afterq13", "$ref": "urn:start#quant.x14" }
+            }
+        },
+        "urn:setvar14": {
+            "$id": "urn:setvar14",
+            "$defs": {
+                "x14":     { "$dynamicAnchor": "x14",     "anyOf": [true] },
+                "not.x14": { "$dynamicAnchor": "not.x14", "anyOf": [false] },
+                "afterq14": { "$anchor": "afterq14", "$ref": "urn:close#phi" }
+            }
+        },
+        "urn:close": {
+             "$id": "urn:close",
+             "$defs": {
+                "x1":     { "$dynamicAnchor": "x1",     "anyOf": [false] },
+                "not.x1": { "$dynamicAnchor": "not.x1", "anyOf": [true] },
+                "x2":     { "$dynamicAnchor": "x2",     "anyOf": [false] },
+                "not.x2": { "$dynamicAnchor": "not.x2", "anyOf": [true] },
+                "x3":     { "$dynamicAnchor": "x3",     "anyOf": [false] },
+                "not.x3": { "$dynamicAnchor": "not.x3", "anyOf": [true] },
+                "x4":     { "$dynamicAnchor": "x4",     "anyOf": [false] },
+                "not.x4": { "$dynamicAnchor": "not.x4", "anyOf": [true] },
+                "x5":     { "$dynamicAnchor": "x5",     "anyOf": [false] },
+                "not.x5": { "$dynamicAnchor": "not.x5", "anyOf": [true] },
+                "x6":     { "$dynamicAnchor": "x6",     "anyOf": [false] },
+                "not.x6": { "$dynamicAnchor": "not.x6", "anyOf": [true] },
+                "x7":     { "$dynamicAnchor": "x7",     "anyOf": [false] },
+                "not.x7": { "$dynamicAnchor": "not.x7", "anyOf": [true] },
+                "x8":     { "$dynamicAnchor": "x8",     "anyOf": [false] },
+                "not.x8": { "$dynamicAnchor": "not.x8", "anyOf": [true] },
+                "x9":     { "$dynamicAnchor": "x9",     "anyOf": [false] },
+                "not.x9": { "$dynamicAnchor": "not.x9", "anyOf": [true] },
+                "x10":     { "$dynamicAnchor": "x10",     "anyOf": [false] },
+                "not.x10": { "$dynamicAnchor": "not.x10", "anyOf": [true] },
+                "x11":     { "$dynamicAnchor": "x11",     "anyOf": [false] },
+                "not.x11": { "$dynamicAnchor": "not.x11", "anyOf": [true] },
+                "x12":     { "$dynamicAnchor": "x12",     "anyOf": [false] },
+                "not.x12": { "$dynamicAnchor": "not.x12", "anyOf": [true] },
+                "x13":     { "$dynamicAnchor": "x13",     "anyOf": [false] },
+                "not.x13": { "$dynamicAnchor": "not.x13", "anyOf": [true] },
+                "x14":     { "$dynamicAnchor": "x14",     "anyOf": [false] },
+                "not.x14": { "$dynamicAnchor": "not.x14", "anyOf": [true] },
+                "phi": {
+                   "$anchor": "phi", 
+                   "allOf": [
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x1" },
+                                        { "$dynamicRef": "urn:close#x2" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x1" },
+                                        { "$dynamicRef": "urn:close#not.x2" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x3" },
+                                        { "$dynamicRef": "urn:close#x4" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x3" },
+                                        { "$dynamicRef": "urn:close#not.x4" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x5" },
+                                        { "$dynamicRef": "urn:close#x6" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x5" },
+                                        { "$dynamicRef": "urn:close#not.x6" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x7" },
+                                        { "$dynamicRef": "urn:close#x8" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x7" },
+                                        { "$dynamicRef": "urn:close#not.x8" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x9" },
+                                        { "$dynamicRef": "urn:close#x10" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x9" },
+                                        { "$dynamicRef": "urn:close#not.x10" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x11" },
+                                        { "$dynamicRef": "urn:close#x12" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x11" },
+                                        { "$dynamicRef": "urn:close#not.x12" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x13" },
+                                        { "$dynamicRef": "urn:close#x14" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x13" },
+                                        { "$dynamicRef": "urn:close#not.x14" }
+				      ]
+			   } 
+                         ]
+                       }
+                   ]
+                }
+             }
+        }
+    }
+}

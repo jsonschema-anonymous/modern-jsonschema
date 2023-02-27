@@ -1,0 +1,58 @@
+{
+    "$ref": "#/definitions/urn:start/definitions/quant.x1",
+    "definitions": {
+        "urn:start": {
+             "definitions": {
+                 "quant.x1" : { 
+                    "allOf": [ { "$ref": "#/definitions/urn:setvar1/definitions/afterq1" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq1" }
+                    ]
+                 },
+                 "quant.x2" : { 
+                    "anyOf": [ { "$ref": "#/definitions/urn:setvar2/definitions/afterq2" },
+                               { "$ref": "#/definitions/urn:start/definitions/afterq2" }
+                    ]
+                 },
+                 "afterq1": { "$ref": "#/definitions/urn:start/definitions/quant.x2" },
+                 "afterq2": { "$ref": "#/definitions/urn:close/definitions/phi" }
+             }
+        },
+        "urn:setvar1": {
+            "definitions": {
+                "x1":     {  },
+                "not.x1": { "not": {} },
+                "afterq1": { "$ref": "#/definitions/urn:start/definitions/quant.x2" }
+            }
+        },
+        "urn:setvar2": {
+            "definitions": {
+                "x2":     {  },
+                "not.x2": { "not": {} },
+                "afterq2": { "$ref": "#/definitions/urn:close/definitions/phi" }
+            }
+        },
+        "urn:close": {
+             "definitions": {
+                "x1":     { "not": {} },
+                "not.x1": {  },
+                "x2":     { "not": {} },
+                "not.x2": {  },
+                "phi": {
+                   "allOf": [
+                       { "anyOf": [
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/x1" },
+                                        { "$ref": "#/definitions/urn:close/definitions/x2" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$ref": "#/definitions/urn:close/definitions/not.x1" },
+                                        { "$ref": "#/definitions/urn:close/definitions/not.x2" }
+				      ]
+			   } 
+                         ]
+                       }
+                   ]
+                }
+             }
+        }
+    }
+}

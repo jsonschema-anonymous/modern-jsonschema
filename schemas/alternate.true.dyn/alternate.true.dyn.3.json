@@ -1,0 +1,156 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$ref": "urn:start#quant.x1",
+    "$defs": {
+        "urn:start": {
+             "$id": "urn:start",
+             "$defs": {
+                 "quant.x1" : { 
+                    "$anchor": "quant.x1",
+                    "allOf": [ { "$ref": "urn:setvar1#afterq1" },
+                               { "$ref": "urn:start#afterq1" }
+                    ]
+                 },
+                 "quant.x2" : { 
+                    "$anchor": "quant.x2",
+                    "anyOf": [ { "$ref": "urn:setvar2#afterq2" },
+                               { "$ref": "urn:start#afterq2" }
+                    ]
+                 },
+                 "quant.x3" : { 
+                    "$anchor": "quant.x3",
+                    "allOf": [ { "$ref": "urn:setvar3#afterq3" },
+                               { "$ref": "urn:start#afterq3" }
+                    ]
+                 },
+                 "quant.x4" : { 
+                    "$anchor": "quant.x4",
+                    "anyOf": [ { "$ref": "urn:setvar4#afterq4" },
+                               { "$ref": "urn:start#afterq4" }
+                    ]
+                 },
+                 "quant.x5" : { 
+                    "$anchor": "quant.x5",
+                    "allOf": [ { "$ref": "urn:setvar5#afterq5" },
+                               { "$ref": "urn:start#afterq5" }
+                    ]
+                 },
+                 "quant.x6" : { 
+                    "$anchor": "quant.x6",
+                    "anyOf": [ { "$ref": "urn:setvar6#afterq6" },
+                               { "$ref": "urn:start#afterq6" }
+                    ]
+                 },
+                 "afterq1": { "$anchor": "afterq1", "$ref": "urn:start#quant.x2" },
+                 "afterq2": { "$anchor": "afterq2", "$ref": "urn:start#quant.x3" },
+                 "afterq3": { "$anchor": "afterq3", "$ref": "urn:start#quant.x4" },
+                 "afterq4": { "$anchor": "afterq4", "$ref": "urn:start#quant.x5" },
+                 "afterq5": { "$anchor": "afterq5", "$ref": "urn:start#quant.x6" },
+                 "afterq6": { "$anchor": "afterq6", "$ref": "urn:close#phi" }
+             }
+        },
+        "urn:setvar1": {
+            "$id": "urn:setvar1",
+            "$defs": {
+                "x1":     { "$dynamicAnchor": "x1",     "anyOf": [true] },
+                "not.x1": { "$dynamicAnchor": "not.x1", "anyOf": [false] },
+                "afterq1": { "$anchor": "afterq1", "$ref": "urn:start#quant.x2" }
+            }
+        },
+        "urn:setvar2": {
+            "$id": "urn:setvar2",
+            "$defs": {
+                "x2":     { "$dynamicAnchor": "x2",     "anyOf": [true] },
+                "not.x2": { "$dynamicAnchor": "not.x2", "anyOf": [false] },
+                "afterq2": { "$anchor": "afterq2", "$ref": "urn:start#quant.x3" }
+            }
+        },
+        "urn:setvar3": {
+            "$id": "urn:setvar3",
+            "$defs": {
+                "x3":     { "$dynamicAnchor": "x3",     "anyOf": [true] },
+                "not.x3": { "$dynamicAnchor": "not.x3", "anyOf": [false] },
+                "afterq3": { "$anchor": "afterq3", "$ref": "urn:start#quant.x4" }
+            }
+        },
+        "urn:setvar4": {
+            "$id": "urn:setvar4",
+            "$defs": {
+                "x4":     { "$dynamicAnchor": "x4",     "anyOf": [true] },
+                "not.x4": { "$dynamicAnchor": "not.x4", "anyOf": [false] },
+                "afterq4": { "$anchor": "afterq4", "$ref": "urn:start#quant.x5" }
+            }
+        },
+        "urn:setvar5": {
+            "$id": "urn:setvar5",
+            "$defs": {
+                "x5":     { "$dynamicAnchor": "x5",     "anyOf": [true] },
+                "not.x5": { "$dynamicAnchor": "not.x5", "anyOf": [false] },
+                "afterq5": { "$anchor": "afterq5", "$ref": "urn:start#quant.x6" }
+            }
+        },
+        "urn:setvar6": {
+            "$id": "urn:setvar6",
+            "$defs": {
+                "x6":     { "$dynamicAnchor": "x6",     "anyOf": [true] },
+                "not.x6": { "$dynamicAnchor": "not.x6", "anyOf": [false] },
+                "afterq6": { "$anchor": "afterq6", "$ref": "urn:close#phi" }
+            }
+        },
+        "urn:close": {
+             "$id": "urn:close",
+             "$defs": {
+                "x1":     { "$dynamicAnchor": "x1",     "anyOf": [false] },
+                "not.x1": { "$dynamicAnchor": "not.x1", "anyOf": [true] },
+                "x2":     { "$dynamicAnchor": "x2",     "anyOf": [false] },
+                "not.x2": { "$dynamicAnchor": "not.x2", "anyOf": [true] },
+                "x3":     { "$dynamicAnchor": "x3",     "anyOf": [false] },
+                "not.x3": { "$dynamicAnchor": "not.x3", "anyOf": [true] },
+                "x4":     { "$dynamicAnchor": "x4",     "anyOf": [false] },
+                "not.x4": { "$dynamicAnchor": "not.x4", "anyOf": [true] },
+                "x5":     { "$dynamicAnchor": "x5",     "anyOf": [false] },
+                "not.x5": { "$dynamicAnchor": "not.x5", "anyOf": [true] },
+                "x6":     { "$dynamicAnchor": "x6",     "anyOf": [false] },
+                "not.x6": { "$dynamicAnchor": "not.x6", "anyOf": [true] },
+                "phi": {
+                   "$anchor": "phi", 
+                   "allOf": [
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x1" },
+                                        { "$dynamicRef": "urn:close#x2" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x1" },
+                                        { "$dynamicRef": "urn:close#not.x2" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x3" },
+                                        { "$dynamicRef": "urn:close#x4" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x3" },
+                                        { "$dynamicRef": "urn:close#not.x4" }
+				      ]
+			   } 
+                         ]
+                       },
+                       { "anyOf": [
+                           { "allOf": [ { "$dynamicRef": "urn:close#x5" },
+                                        { "$dynamicRef": "urn:close#x6" }
+				      ]
+			   } ,
+                           { "allOf": [ { "$dynamicRef": "urn:close#not.x5" },
+                                        { "$dynamicRef": "urn:close#not.x6" }
+				      ]
+			   } 
+                         ]
+                       }
+                   ]
+                }
+             }
+        }
+    }
+}
